@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+.calc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   // width: 240px;
+    min-height: 340px;
+    border: 1px solid black;
+}
+.number {
+    font-size: 10rem;
+    flex-basis: 60%;
+    text-align: center;
+    border: 1px solid gray;
+}
+.buttons {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    flex-basis: 50%;
+    height: 100px;
+    font-size: 2rem;
+    background-color: transparent;
+    &:focus {
+        outline: none;
+        background-color: burlywood;
+    }
+}
+.kasa {
+    flex-basis: 20%;
+    font-size: 2.5rem;
+    &__num {
+        font-weight: bold;
+    }
+}
